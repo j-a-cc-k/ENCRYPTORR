@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
      <title>Encrypt!</title>
-
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
      <meta name="keywords" content="">
      <meta name="team" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
      <link rel="stylesheet" href="static/css/bootstrap.min.css">
      <link rel="stylesheet" href="static/css/vegas.min.css">
      <link rel="stylesheet" href="static/css/font-awesome.min.css">
-
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="static/css/templatemo-style.css">
-
 </head>
 <body>
-
      <!-- PRE LOADER -->
      <section class="preloader">
           <div class="spinner">
-
                <span class="spinner-rotate"></span>
                
           </div>
      </section>
-
-
      <!-- GRID LINE -->
     <section class="grid">
          <div class="container">
@@ -55,8 +46,6 @@
             </div>
          </div>
     </section>
-
-
      <!-- HOME -->
      <section id="home">
         <div class="overlay"></div>
@@ -71,7 +60,9 @@
                                 <input type="submit" value="Submit"/>
                                <!--enocde-->
                                <h1>Heres your encrypted message:</h1>
-                               <h2>{{finalString}}</h2>
+                               <textarea>{{finalString}}</textarea>
+                               <h1>Heres your key:</h1>
+                               <textarea>{{finalkey}}</textarea>
                                <!-- decode-->
                               <!--  <h1>Decrypt your message below!</h1>-->
                               <!--  <form method="post" action="/decode">-->
@@ -83,9 +74,6 @@
                </div>
           </div>
      </section>
-
-
-
    <div class="menu-bg"></div>
     <div class="menu-burger">☰</div>
 
@@ -99,7 +87,6 @@
                 <li><a href="/decode">Decrypt</a></li>
             </ul>
            </div>
-
            <div class="col-md-4 col-sm-6">
              <address>
                <h1>Our Studio</h1>
@@ -107,11 +94,6 @@
                </div>
              </address>
            </div> 
-
-
-    
-
-
      <!-- SCRIPTS -->
      <script src="static/js/jquery.js"></script>
      <script src="static/js/bootstrap.min.js"></script>

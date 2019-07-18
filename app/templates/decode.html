@@ -68,9 +68,11 @@
                             <h1>Decrypt your message below!</h1>
                             <form method="post" action="/decode">
                                 <input type="text" name="encoded_message"/>
+                            <h1>Input your key here:</h1>
+                                <input type="text" name="input_key"/>
                                 <input type="submit" value="Submit"/>
                                 <h1>Heres your decrypted message:</h1>
-                                <h1>{{finalString}}</h1>
+                                <textarea>{{finalString}}</textarea>
                             </form> 
                          </div>
                     </div>
