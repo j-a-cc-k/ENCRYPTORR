@@ -16,7 +16,7 @@ def encode():
     finalString = ""
     for l in range(0, len(name)):
         letter = int(ord(name[l]))
-        pie = str(math.pi)
+        pie = open("app/static/pie.txt").read()
         if pie[l] == ".":
             letter += 1
         else:
@@ -34,7 +34,7 @@ def decrypt():
         finalString = ""
         for l in range(0, len(name)):
             letter = int(ord(name[l]))
-            pie = str(math.pi)
+            pie = open("app/static/pie.txt").read()
             if pie[l] == ".":
                 letter -= 1
             else:
