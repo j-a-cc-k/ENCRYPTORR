@@ -1,30 +1,43 @@
 from app import app
 from flask import render_template, request
-from app.models import model, formopener, cypher
-# from templates import index
+from app.models import model, formopener
+import math
 
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
     
-# @app.routes('/encode')
-# def encode():
-#     return render_template("index.html" ,name = name)
-    
+
 @app.route('/encode', methods = ["GET","POST"])
 def encode():
+    userdata = dict(request.form)
+    name = (userdata["message"])
+    finalString = ""
+    for l in range(0, len(name)):
+        letter = int(ord(name[l]))
+        pie = str(math.pi)
+        if pie[l] == ".":
+            letter += 1
+        else:
+            letter += int(pie[l])
+        finalString += chr(letter)
+    return render_template('index.html', name = name, finalString = finalString)
+
+@app.route('/decode', methods = ["GET","POST"])
+def decrypt():
     if request.method == "GET":
-        return "Please use the form"
+        return render_template("decode.html")
     else:
         userdata = dict(request.form)
-        print(userdata)
-        # vre = userdata["breakfast"]
-        name = userdata["message"]
-        # breakfast = model.shout(vre.decode("utf-8"))
-        # return "under contruction"
-        return render_template('index.html', name = name)
-        
-# @app.route('/encoded')
-# def encoded():
-#     return
+        name = (userdata["encoded_message"])
+        finalString = ""
+        for l in range(0, len(name)):
+            letter = int(ord(name[l]))
+            pie = str(math.pi)
+            if pie[l] == ".":
+                letter -= 1
+            else:
+                letter -= int(pie[l])
+            finalString += chr(letter)
+    return render_template('decode.html', name = name, finalString = finalString)

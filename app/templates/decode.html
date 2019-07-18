@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>Encrypt!</title>
+     <title>Decrypt!</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -65,18 +65,12 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="home-info">
-                              <h1>Encrpyt your message below!</h1>
-                            <form method="post" action="/encode">
-                                <input type="text" name="message"/>
+                            <h1>Decrypt your message below!</h1>
+                            <form method="post" action="/decode">
+                                <input type="text" name="encoded_message"/>
                                 <input type="submit" value="Submit"/>
-                               <!--enocde-->
-                               <h1>Heres your encrypted message:</h1>
-                               <h2>{{finalString}}</h2>
-                               <!-- decode-->
-                              <!--  <h1>Decrypt your message below!</h1>-->
-                              <!--  <form method="post" action="/decode">-->
-                              <!--  <input type="text" name="message"/>-->
-                              <!--<input type="submit" value="Submit"/>-->
+                                <h1>Heres your decrypted message:</h1>
+                                <h1>{{finalString}}</h1>
                             </form> 
                          </div>
                     </div>
@@ -85,33 +79,27 @@
      </section>
 
 
-
    <div class="menu-bg"></div>
     <div class="menu-burger">☰</div>
 
     <div class="menu-items">
        <div class="container">
          <div class="row">
-           <div class="col-md-offset-2 col-md-4 col-sm-6">
             <h1>Navigations</h1>
              <ul class="menu">
                 <li><a href="/index">Encrpyt</a></li>
                 <li><a href="/decode">Decrypt</a></li>
             </ul>
            </div>
-
-           <div class="col-md-4 col-sm-6">
+  
              <address>
                <h1>Our Studio</h1>
                <p>18 W 89th St, <br> New York, NY</p>
+               <div class="google-map">
+                  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJo1cEe5tYwokR01nsn7ot8mg&key=AIzaSyCa_2zMnBU5HF16px2d4twgcdzZR5P0mXk" allowfullscreen></iframe>
                </div>
              </address>
            </div> 
-
-
-    
-
-
      <!-- SCRIPTS -->
      <script src="static/js/jquery.js"></script>
      <script src="static/js/bootstrap.min.js"></script>

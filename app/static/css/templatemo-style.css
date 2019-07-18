@@ -115,36 +115,6 @@ https://templatemo.com/tm-521-get-ready
     margin-top: 20px;
   }
 
-  .subscribe-form {
-    position: relative;
-  }
-
-  .subscribe-form .form-control {
-    background: #ffffff;
-    box-shadow: none;
-    border: 0;
-    border-radius: 50px;
-	width: 340px;
-    height: 45px;
-    padding: 6px 30px;
-  }
-
-  .subscribe-form button[type="submit"] {
-    background: transparent;
-    border: 0;
-    outline: none;
-  }
-
-  .subscribe-form .fa {
-    cursor: pointer;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    color: #d2b48c;
-    font-size: 20px;
-  }
-
-
 
   /*---------------------------------------
        PRE LOADER              
@@ -249,8 +219,6 @@ https://templatemo.com/tm-521-get-ready
     align-content: center;
     position: absolute;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
     opacity: 0;
     transition: .4s;
     margin-top: 50px;
@@ -260,8 +228,8 @@ https://templatemo.com/tm-521-get-ready
 
   .menu-items ul.menu {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     text-align: left;
     top: 10px;
   }
@@ -297,7 +265,7 @@ https://templatemo.com/tm-521-get-ready
   .menu-items ul.menu li a:hover:after {
     content: "";
     background: #d2b48c;
-    width: 100%;
+    width: 50%;
   }
 
   .menu-items.fs {
