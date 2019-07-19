@@ -5,8 +5,16 @@ Get Ready Template
 https://templatemo.com/tm-521-get-ready
 
 */
-  
+
+
   @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+@font-face {
+font-family: humanoid;
+src: url('static/fonts/HUMANOID.ttf');
+}
+
+
 
   body {
     margin: 0;
@@ -200,12 +208,25 @@ https://templatemo.com/tm-521-get-ready
       MENU              
   -----------------------------------------*/
 
+.big_title{
+  font-size:50px;
+  text-decoration: underline;
+  text-decoration: overline;
+}
+
+#big_t{
+  font-size:65px;
+}
+
+#sign{
+  color: #fad89b;
+  font-size:20px;
+}
+
  #encyr, #dncyr{
   padding: 20px;
   text-align: center;
   color: #fad89b;
-  font-size: 30px;
-   
  }
 
 .big_top {

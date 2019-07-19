@@ -9,7 +9,6 @@ import random
 def index():
     return render_template('index.html')
     
-
 @app.route('/encode', methods = ["GET","POST"])
 def encode():
     userdata = dict(request.form)
