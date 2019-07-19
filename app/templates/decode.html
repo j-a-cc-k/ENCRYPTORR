@@ -65,13 +65,14 @@
 
                     <div class="col-md-12 col-sm-12">
                          <div class="home-info">
-                            <h1>Decrypt your message below!</h1>
+        <h2><a href="/index" id = "encyr"> Encrypt </a> <a href="/decode" id = "dncyr">Decrypt</a></h2>
+                            <h1 class = "big_top">Decrypt your message below!</h1>
                             <form method="post" action="/decode">
                                 <input type="text" name="encoded_message"/>
                             <h1>Input your key here:</h1>
                                 <input type="text" name="input_key"/>
                                 <input type="submit" value="Submit"/>
-                                <h1>Heres your decrypted message:</h1>
+                                <h1>Here's your decrypted message:</h1>
                                 <textarea>{{finalString}}</textarea>
                             </form> 
                          </div>
@@ -80,28 +81,6 @@
           </div>
      </section>
 
-
-   <div class="menu-bg"></div>
-    <div class="menu-burger">☰</div>
-
-    <div class="menu-items">
-       <div class="container">
-         <div class="row">
-            <h1>Navigations</h1>
-             <ul class="menu">
-                <li><a href="/index">Encrpyt</a></li>
-                <li><a href="/decode">Decrypt</a></li>
-            </ul>
-           </div>
-  
-             <address>
-               <h1>Our Studio</h1>
-               <p>18 W 89th St, <br> New York, NY</p>
-               <div class="google-map">
-                  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJo1cEe5tYwokR01nsn7ot8mg&key=AIzaSyCa_2zMnBU5HF16px2d4twgcdzZR5P0mXk" allowfullscreen></iframe>
-               </div>
-             </address>
-           </div> 
      <!-- SCRIPTS -->
      <script src="static/js/jquery.js"></script>
      <script src="static/js/bootstrap.min.js"></script>

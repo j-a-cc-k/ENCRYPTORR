@@ -30,6 +30,7 @@ https://templatemo.com/tm-521-get-ready
   h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
     line-height: inherit;
+    padding: 10px;
   }
 
   h1 {
@@ -87,7 +88,7 @@ https://templatemo.com/tm-521-get-ready
   }
 
   .overlay {
-    background: linear-gradient(to top right, #d2b48c, #000000);
+    background: linear-gradient(to top right, #7e83bf, #000000);
     opacity: 0.9;
     position: absolute;
     top: 0;
@@ -114,6 +115,36 @@ https://templatemo.com/tm-521-get-ready
     border: 0;
     margin-top: 20px;
   }
+
+  .subscribe-form {
+    position: relative;
+  }
+
+  .subscribe-form .form-control {
+    background: #ffffff;
+    box-shadow: none;
+    border: 0;
+    border-radius: 50px;
+	width: 340px;
+    height: 45px;
+    padding: 6px 30px;
+  }
+
+  .subscribe-form button[type="submit"] {
+    background: transparent;
+    border: 0;
+    outline: none;
+  }
+
+  .subscribe-form .fa {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #d2b48c;
+    font-size: 20px;
+  }
+
 
 
   /*---------------------------------------
@@ -169,6 +200,18 @@ https://templatemo.com/tm-521-get-ready
       MENU              
   -----------------------------------------*/
 
+ #encyr, #dncyr{
+  padding: 20px;
+  text-align: center;
+  color: #fad89b;
+  font-size: 30px;
+   
+ }
+
+.big_top {
+  padding-top: 60px;
+}
+
   .menu, .menu-bg, .menu-burger {
     position: fixed;
     z-index: 222;
@@ -219,6 +262,8 @@ https://templatemo.com/tm-521-get-ready
     align-content: center;
     position: absolute;
     z-index: 9999;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     transition: .4s;
     margin-top: 50px;
@@ -228,8 +273,8 @@ https://templatemo.com/tm-521-get-ready
 
   .menu-items ul.menu {
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     text-align: left;
     top: 10px;
   }
@@ -265,7 +310,7 @@ https://templatemo.com/tm-521-get-ready
   .menu-items ul.menu li a:hover:after {
     content: "";
     background: #d2b48c;
-    width: 50%;
+    width: 100%;
   }
 
   .menu-items.fs {
@@ -310,6 +355,7 @@ https://templatemo.com/tm-521-get-ready
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*align-items: 100px;*/
     position: relative;
     z-index: 2;
     width: 100%;
@@ -409,6 +455,7 @@ https://templatemo.com/tm-521-get-ready
 
     h1 {
       font-size: 1.50em;
+      padding: 100px;
     }
 
     .menu-items {

@@ -15,6 +15,7 @@
      <link rel="stylesheet" href="static/css/templatemo-style.css">
 </head>
 <body>
+
      <!-- PRE LOADER -->
      <section class="preloader">
           <div class="spinner">
@@ -22,11 +23,12 @@
                
           </div>
      </section>
+     
+
      <!-- GRID LINE -->
     <section class="grid">
          <div class="container">
             <div class="row">
-
               <div class="col-md-2 col-sm-2">
                 <div class="grid-line"></div>
               </div>
@@ -42,58 +44,34 @@
               <div class="col-md-2 col-sm-2">
                 <div class="grid-line"></div>
               </div>
-
             </div>
          </div>
     </section>
+
      <!-- HOME -->
      <section id="home">
         <div class="overlay"></div>
           <div class="container">
                <div class="row">
-
                     <div class="col-md-12 col-sm-12">
                          <div class="home-info">
-                              <h1>Encrpyt your message below!</h1>
+                                    <h2><a href="/index" id = "encyr"> Encrypt </a> <a href="/decode" id = "dncyr">Decrypt</a></h2>
+                              <h1 class = "big_top">Encrpyt your message below!</h1>
                             <form method="post" action="/encode">
                                 <input type="text" name="message"/>
                                 <input type="submit" value="Submit"/>
                                <!--enocde-->
-                               <h1>Heres your encrypted message:</h1>
+                               <h1>Here's your encrypted message:</h1>
                                <textarea>{{finalString}}</textarea>
-                               <h1>Heres your key:</h1>
+                               <h1>Here's your key:</h1>
                                <textarea>{{finalkey}}</textarea>
-                               <!-- decode-->
-                              <!--  <h1>Decrypt your message below!</h1>-->
-                              <!--  <form method="post" action="/decode">-->
-                              <!--  <input type="text" name="message"/>-->
-                              <!--<input type="submit" value="Submit"/>-->
                             </form> 
                          </div>
                     </div>
                </div>
           </div>
      </section>
-   <div class="menu-bg"></div>
-    <div class="menu-burger">☰</div>
-
-    <div class="menu-items">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-offset-2 col-md-4 col-sm-6">
-            <h1>Navigations</h1>
-             <ul class="menu">
-                <li><a href="/index">Encrpyt</a></li>
-                <li><a href="/decode">Decrypt</a></li>
-            </ul>
-           </div>
-           <div class="col-md-4 col-sm-6">
-             <address>
-               <h1>Our Studio</h1>
-               <p>18 W 89th St, <br> New York, NY</p>
-               </div>
-             </address>
-           </div> 
+  
      <!-- SCRIPTS -->
      <script src="static/js/jquery.js"></script>
      <script src="static/js/bootstrap.min.js"></script>
